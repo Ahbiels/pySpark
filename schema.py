@@ -6,7 +6,7 @@ spark = SparkSession.builder.appName("Schema").getOrCreate()
 schema = "Name STRING, Age INT, Job STRING" #Funciona
 data = [("Angelo",19,"Data Enginner"),("Joao",20,"Programador")]
 
-df = spark.createDataFrame(data,"Name STRING, Age INT, Job STRING")
+df = spark.createDataFrame(data,schema)
 
 df.show()
 spark.stop()
