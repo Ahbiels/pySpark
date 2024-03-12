@@ -18,5 +18,5 @@ try:
 except:
     print("Erro")
 
-# data.write.format("parquet").save("./data-parquet")
-data.write.format("csv").save("./datacsv")
+data.write.format("parquet").save("./data-parquet")
+# data.write.format("csv").save("./datacsv")
